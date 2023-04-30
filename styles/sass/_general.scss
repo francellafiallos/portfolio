@@ -9,3 +9,21 @@ ul {
     width: 60%;
     margin: 0 auto;
 }
+
+.button {
+    background-color: v.$button-color;
+    width: 150px;
+    padding: 7px;
+    p {
+        font-family: v.$secondary-font;
+        text-align: center;
+        a {
+            text-align: center;
+            text-decoration: none;
+            font-family: v.$secondary-font;
+        }
+        a:visited {
+            color: v.$primary-font-color;
+        }
+    }
+}

@@ -236,6 +236,24 @@ ul {
   margin: 0 auto;
 }
 
+.button {
+  background-color: #B07BAC;
+  width: 150px;
+  padding: 7px;
+}
+.button p {
+  font-family: "Alexandria", sans-serif;
+  text-align: center;
+}
+.button p a {
+  text-align: center;
+  text-decoration: none;
+  font-family: "Alexandria", sans-serif;
+}
+.button p a:visited {
+  color: black;
+}
+
 html {
   font-family: "Lora", serif;
   font-size: 125%;
@@ -267,6 +285,7 @@ h4 {
 h5 {
   font-family: "Alexandria", sans-serif;
   font-weight: lighter;
+  text-transform: uppercase;
 }
 
 nav {
@@ -329,7 +348,7 @@ nav ul li a:hover::before {
 
 .main-header {
   height: 100vh;
-  background-color: #5F7367;
+  background-color: #36423b;
 }
 .main-header .nav-wrapper {
   background-color: whitesmoke;
@@ -337,4 +356,96 @@ nav ul li a:hover::before {
   width: 100%;
   -webkit-box-shadow: 0px 0px 1px 1px cornsilk;
           box-shadow: 0px 0px 1px 1px cornsilk;
+}
+.main-header .nav-wrapper .hero-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.main-header .nav-wrapper .hero-container h1,
+.main-header .nav-wrapper .hero-container h3 {
+  color: white;
+}
+.main-header .nav-wrapper .hero-container h1 {
+  margin: 0;
+  font-size: 5vw;
+}
+.main-header .nav-wrapper .hero-container h3 {
+  margin: 5px 0 35px 0;
+}
+.main-header .nav-wrapper .hero-container .hero-text-container {
+  border: 7px solid whitesmoke;
+  padding: 30px;
+}
+.main-header .nav-wrapper .hero-container .hero-text-container .button-container {
+  position: absolute;
+  width: 54%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-me .about-me-wrapper .wrapper {
+  text-align: center;
+}
+
+.skills {
+  background-color: #5F7367;
+  padding-bottom: 50px;
+}
+.skills .text-container {
+  text-align: center;
+  padding-top: 50px;
+}
+.skills .text-container .skills-list {
+  padding-left: 0px;
+  display: grid;
+  grid-auto-rows: 33% 33% 33%;
+  grid-template-columns: 25% 25% 25% 25%;
+  row-gap: 25px;
+}
+.skills .text-container .skills-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Alexandria", sans-serif;
+}
+.skills .text-container .skills-list li i {
+  font-size: clamp(2.5rem, 1.8608rem + 3.196vw, 5.3125rem);
+}
+.skills .text-container .other-skills-list {
+  padding-left: 0px;
+  display: grid;
+  grid-auto-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  row-gap: 25px;
+}
+.skills .text-container .other-skills-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Alexandria", sans-serif;
+}
+.skills .text-container .other-skills-list li i {
+  font-size: clamp(2.5rem, 1.8608rem + 3.196vw, 5.3125rem);
 }
