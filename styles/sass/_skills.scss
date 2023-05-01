@@ -21,23 +21,51 @@
                 font-size: clamp(2.5rem, 1.8608rem + 3.196vw, 5.3125rem);
             }
         }
+        .accordion {
+            background-color: v.$primary-color;
+            font-family: v.$secondary-font;
+            color: black;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: center;
+            border: none;
+            outline: none;
+            transition: 0.4s;     
+            .skills-title-container {
+                width: 300px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+        .active, .accordion:hover {
+            background-color: #ccc;
+          }
+
+          .panel {
+            padding: 0 18px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+          }
         // .other-skills-list-container {
 
-            .other-skills-list {
-                padding-left: 0px;
-                display: grid;
-                grid-auto-rows: 50% 50%;
-                grid-template-columns: 50% 50%;
-                row-gap: 25px;
-                li {
-                    display: flex;
-                    flex-direction: column;
-                    font-family: v.$secondary-font;
-                }
-                li i {
-                    font-size: clamp(2.5rem, 1.8608rem + 3.196vw, 5.3125rem);
-                }
-            }
+            // .other-skills-list {
+            //     padding-left: 0px;
+            //     display: grid;
+            //     grid-auto-rows: 50% 50%;
+            //     grid-template-columns: 50% 50%;
+            //     row-gap: 25px;
+            //     li {
+            //         display: flex;
+            //         flex-direction: column;
+            //         font-family: v.$secondary-font;
+            //     }
+            //     li i {
+            //         font-size: clamp(2.5rem, 1.8608rem + 3.196vw, 5.3125rem);
+            //     }
+            // }
         // }
     }
 }

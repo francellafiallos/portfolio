@@ -102,13 +102,60 @@
                         </div>
                         
                         <div class="other-skills-container">
-                            <h2>Other Skills</h2>
-                            <ul class="other-skills-list">
-                                <li><i class="fa-solid fa-list-check"></i>Project Management</li>
-                                <li><i class="fa-solid fa-pencil"></i>Grant-writing</li>
-                                <li><i class="fa-solid fa-receipt"></i>Basic Bookkeeping</li>
-                                <li><i class="fa-solid fa-headphones"></i>Audio Production</li>
-                            </ul>
+                            <h2>Other Skills and Areas of Expertise</h2>
+                            <!-- <ul class="other-skills-list">
+                                 <li><i class="fa-solid fa-list-check"></i>Project Management</li> -->
+                                <!-- <li><i class="fa-solid fa-pencil"></i>Grant-writing</li> -->
+                                <!-- <li><i class="fa-solid fa-receipt"></i>Basic Bookkeeping</li> -->
+                                <!-- <li><i class="fa-solid fa-headphones"></i>Audio Production</li> -->
+                            <!-- </ul> --> 
+                            <div class="other-skills-accordion">
+                                <button class="accordion"><i class="fa-solid fa-list-check"></i>Project Management</button>
+                                    <div class="panel">
+                                        <ul class="project-management-list">
+                                            <li>Obtained over $100,000 in grants and subsidies over two years</li>
+                                            <li>Executed and oversaw a three-part audio residency aimed at increasing climate change</li>
+                                            <li>Managed a $300,000+ budget</li>
+                                            <li>Led grassroots fundraising efforts and campaigns</li>
+                                        </ul>
+                                    </div>
+                                <button class="accordion">
+                                    <i class="fa-solid fa-check"></i>Leadership and Governance</button>
+                                    <div class="panel">
+                                        <ul class="leadership-list">
+                                            <li>Debaser</li>
+                                            <li>National Campus and Community Radio Association</li>
+                                            <li>CKDU 88.1 FM</li>
+                                            <li>Centre for Art Tapes</li>
+                                        </ul>
+                                    </div>
+                                <button class="accordion">
+                                    <div class="skills-title-container">
+                                        <i class="fa-solid fa-headphones"></i>Audio Production
+                                    </div>
+                                </button>
+                                    <div class="panel">
+                                        <ul class="audio-production-list">
+                                            <li>Made podcasts for Kukukwes and Women in Film and Television-Atlantic</li>
+                                            <li>Currently produce a weekly music program showcasing the best in post-punk in Canada and beyond</li>
+                                            <li>Created limited audio documentary series on overlooked, obscure Canadian music</li>
+                                            <li>Collaborated with CBC Music on The Ten, a weekly music program highlighting the 2021 Polaris Music Prize shortlist</li>
+                                        </ul>
+                                    </div>
+                                <button class="accordion">
+                                    <div class="skills-title-container">
+                                        <i class="fa-solid fa-certificate"></i>Professional Affiliations
+                                    </div>
+                                </button>
+                                    <div class="panel">
+                                        <ul class="professional-list">
+                                            <li>Polaris Music Prize</li>
+                                            <li>ADISQ</li>
+                                            <li>Music Nova Scotia</li>
+                                            <li>Prism Prize/MVP Project</li>
+                                        </ul>
+                                    </div>
+                            </div>
                         </div>
                 </div>
             </div>
@@ -215,7 +262,8 @@
                 <div class="audio-projects-block">
                     <div class="audio-title-container">
                         <h4>Superconnected</h4>
-                        <h4>CBC Music</h4>
+                            <iframe width="50%" height="400" src="https://www.mixcloud.com/widget/iframe/?light=1&feed=%2Ffrancellafiallos%2F" frameborder="0" ></iframe>
+                        <h4><img src="./assets/cbc-music-logo.jpg" alt="CBC Music logo." width=384px; />CBC Music</h4>
                     </div>
                     <div class="project-block">
                         <div class="image">
@@ -266,15 +314,15 @@
             <div class="wrapper">
                 <h2>Contact</h2>
                 <div class="contact-icons-container">
-                    <ul>
-                        <li>LinkedIn</li>
-                        <li>GitHub</li>
-                        <li>Twitter</li>
-                        <li>Email</li>
+                    <ul class="contact-list">
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                        <li><i class="fa-brands fa-github"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-solid fa-envelope"></i></li>
                     </ul>
                 </div>
                 <div class="text-container">
-                    <p>Please get in touch by sending an email. Alternatively, Francella is very active on Twitter so don't hesitate to send a DM and an album recommendation.</p>
+                    <p>Please get in touch by sending an email. Alternatively, Francella is very active on Twitter so don't hesitate to send a DM or an album recommendation.</p>
                 </div>
                 <div class="button-container">
                     <div class="button">
@@ -352,6 +400,23 @@
         };
 
         // credit to codepen - simple Typing Carousel
+
+        const acc = document.getElementsByClassName("accordion");
+        let i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("aorctive");
+
+            let panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+     }
+
     </script>
     
 </body>

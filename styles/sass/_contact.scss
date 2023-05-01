@@ -1,2 +1,26 @@
 @use './variables.scss' as v;
 
+.contact-wrapper {
+    background-color: v.$secondary-color;
+    padding: 50px 0 80px 0;
+    .wrapper {
+        text-align: center;
+        h2 {
+            margin: 0 0 0 0;
+        }
+        .contact-icons-container {
+            display: flex;
+            justify-content: center;
+            .contact-list {
+                display: flex;
+                justify-content: space-between;
+                width: 150px;
+                padding-left: 0px;
+            }
+            .contact-list .button-container {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

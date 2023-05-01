@@ -244,6 +244,7 @@ ul {
 .button p {
   font-family: "Alexandria", sans-serif;
   text-align: center;
+  font-weight: bold;
 }
 .button p a {
   text-align: center;
@@ -349,13 +350,14 @@ nav ul li a:hover::before {
 .main-header {
   height: 100vh;
   background-color: #36423b;
+  background-image: url("/assets/header.jpg");
 }
 .main-header .nav-wrapper {
   background-color: whitesmoke;
   height: 60px;
   width: 100%;
-  -webkit-box-shadow: 0px 0px 1px 1px cornsilk;
-          box-shadow: 0px 0px 1px 1px cornsilk;
+  -webkit-box-shadow: 0px 0px 1px 1px whitesmoke;
+          box-shadow: 0px 0px 1px 1px whitesmoke;
 }
 .main-header .nav-wrapper .hero-container {
   height: 100vh;
@@ -373,7 +375,7 @@ nav ul li a:hover::before {
 }
 .main-header .nav-wrapper .hero-container h1,
 .main-header .nav-wrapper .hero-container h3 {
-  color: white;
+  color: #36423b;
 }
 .main-header .nav-wrapper .hero-container h1 {
   margin: 0;
@@ -383,7 +385,7 @@ nav ul li a:hover::before {
   margin: 5px 0 35px 0;
 }
 .main-header .nav-wrapper .hero-container .hero-text-container {
-  border: 7px solid whitesmoke;
+  border: 7px solid gainsboro;
   padding: 30px;
 }
 .main-header .nav-wrapper .hero-container .hero-text-container .button-container {
@@ -429,23 +431,91 @@ nav ul li a:hover::before {
 .skills .text-container .skills-list li i {
   font-size: clamp(2.5rem, 1.8608rem + 3.196vw, 5.3125rem);
 }
-.skills .text-container .other-skills-list {
-  padding-left: 0px;
-  display: grid;
-  grid-auto-rows: 50% 50%;
-  grid-template-columns: 50% 50%;
-  row-gap: 25px;
+.skills .text-container .accordion {
+  background-color: #5F7367;
+  font-family: "Alexandria", sans-serif;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
-.skills .text-container .other-skills-list li {
+.skills .text-container .accordion .skills-title-container {
+  width: 300px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.skills .text-container .active, .skills .text-container .accordion:hover {
+  background-color: #ccc;
+}
+.skills .text-container .panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.contact-wrapper {
+  background-color: #E6FDFF;
+  padding: 50px 0 80px 0;
+}
+.contact-wrapper .wrapper {
+  text-align: center;
+}
+.contact-wrapper .wrapper h2 {
+  margin: 0 0 0 0;
+}
+.contact-wrapper .wrapper .contact-icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact-wrapper .wrapper .contact-icons-container .contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 150px;
+  padding-left: 0px;
+}
+.contact-wrapper .wrapper .contact-icons-container .contact-list .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-wrapper {
+  background-color: #5F7367;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "Alexandria", sans-serif;
 }
-.skills .text-container .other-skills-list li i {
-  font-size: clamp(2.5rem, 1.8608rem + 3.196vw, 5.3125rem);
+.footer-wrapper p {
+  margin: 0;
+  text-align: center;
+  color: white;
 }
