@@ -1,5 +1,17 @@
 @use './variables.scss' as v;
 
-.about-me .about-me-wrapper .wrapper {
-    text-align: center;
+.about-me {
+    background-color: v.$default-color;
+    padding: 50px 0 50px 0;
+    .about-me-wrapper .wrapper {
+        text-align: center;
+        .headshot-container {
+            img {
+                border-radius: 50%;
+            }
+        }
+    }
 }
+// .about-me-wrapper .wrapper {
+//     text-align: center;
+// }

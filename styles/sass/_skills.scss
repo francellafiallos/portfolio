@@ -21,34 +21,52 @@
                 font-size: clamp(2.5rem, 1.8608rem + 3.196vw, 5.3125rem);
             }
         }
-        .accordion {
-            background-color: v.$primary-color;
-            font-family: v.$secondary-font;
-            color: black;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            text-align: center;
-            border: none;
-            outline: none;
-            transition: 0.4s;     
-            .skills-title-container {
-                width: 300px;
-                margin: 0 auto;
-                display: flex;
-                justify-content: space-around;
+        .other-skills-accordion {
+            .panel ul li {
+                list-style: disc;
+                text-align: left;
+                font-family: v.$secondary-font;
             }
+            .accordion {
+                background-color: v.$primary-color;
+                font-family: v.$secondary-font;
+                color: black;
+                cursor: pointer;
+                padding: 0px;
+                width: 100%;
+                text-align: center;
+                border: none;
+                outline: none;
+                transition: 0.4s;     
+                .skills-title-container {
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .skills-title-container i {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .skills-title-container .skill-container {
+                    width: 100%;
+                }
+                .skills-title-container .skil-container h4 {
+                    margin: 0;
+                }
+            }
+            .active, .accordion:hover {
+                background-color: #9daa96;
+              }
+    
+              .panel {
+                padding: 0 18px;
+                background-color: v.$primary-color;
+                display: none;
+                overflow: hidden;
+              }
         }
-        .active, .accordion:hover {
-            background-color: #ccc;
-          }
-
-          .panel {
-            padding: 0 18px;
-            background-color: white;
-            display: none;
-            overflow: hidden;
-          }
+        
         // .other-skills-list-container {
 
             // .other-skills-list {

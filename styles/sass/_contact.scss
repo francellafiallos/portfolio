@@ -8,6 +8,13 @@
         h2 {
             margin: 0 0 0 0;
         }
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+        .text-container {
+            padding: 0 0 30px 0;
+        }
         .contact-icons-container {
             display: flex;
             justify-content: center;
@@ -17,10 +24,10 @@
                 width: 150px;
                 padding-left: 0px;
             }
-            .contact-list .button-container {
-                display: flex;
-                justify-content: center;
-            }
+            // .contact-list .button-container {
+            //     display: flex;
+            //     justify-content: center;
+            // }
         }
     }
 }

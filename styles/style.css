@@ -399,8 +399,15 @@ nav ul li a:hover::before {
           justify-content: center;
 }
 
+.about-me {
+  background-color: whitesmoke;
+  padding: 50px 0 50px 0;
+}
 .about-me .about-me-wrapper .wrapper {
   text-align: center;
+}
+.about-me .about-me-wrapper .wrapper .headshot-container img {
+  border-radius: 50%;
 }
 
 .skills {
@@ -431,12 +438,17 @@ nav ul li a:hover::before {
 .skills .text-container .skills-list li i {
   font-size: clamp(2.5rem, 1.8608rem + 3.196vw, 5.3125rem);
 }
-.skills .text-container .accordion {
+.skills .text-container .other-skills-accordion .panel ul li {
+  list-style: disc;
+  text-align: left;
+  font-family: "Alexandria", sans-serif;
+}
+.skills .text-container .other-skills-accordion .accordion {
   background-color: #5F7367;
   font-family: "Alexandria", sans-serif;
   color: black;
   cursor: pointer;
-  padding: 18px;
+  padding: 0px;
   width: 100%;
   text-align: center;
   border: none;
@@ -444,27 +456,73 @@ nav ul li a:hover::before {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.skills .text-container .accordion .skills-title-container {
-  width: 300px;
+.skills .text-container .other-skills-accordion .accordion .skills-title-container {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.skills .text-container .active, .skills .text-container .accordion:hover {
-  background-color: #ccc;
+.skills .text-container .other-skills-accordion .accordion .skills-title-container i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.skills .text-container .panel {
+.skills .text-container .other-skills-accordion .accordion .skills-title-container .skill-container {
+  width: 100%;
+}
+.skills .text-container .other-skills-accordion .accordion .skills-title-container .skil-container h4 {
+  margin: 0;
+}
+.skills .text-container .other-skills-accordion .active, .skills .text-container .other-skills-accordion .accordion:hover {
+  background-color: #9daa96;
+}
+.skills .text-container .other-skills-accordion .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: #5F7367;
   display: none;
   overflow: hidden;
 }
 
+.audio-projects {
+  padding: 50px 0 50px 0;
+  background-color: whitesmoke;
+}
+.audio-projects .text-container {
+  text-align: center;
+}
+
+.audio-projects-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.audio-projects-block .audio-project {
+  width: 45%;
+}
+.audio-projects-block .audio-project iframe {
+  width: 100%;
+  height: 345px;
+}
+.audio-projects-block .audio-project img {
+  height: 345px;
+  width: 345px;
+}
+
 .contact-wrapper {
-  background-color: #E6FDFF;
+  background-color: #9daa96;
   padding: 50px 0 80px 0;
 }
 .contact-wrapper .wrapper {
@@ -472,6 +530,17 @@ nav ul li a:hover::before {
 }
 .contact-wrapper .wrapper h2 {
   margin: 0 0 0 0;
+}
+.contact-wrapper .wrapper .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact-wrapper .wrapper .text-container {
+  padding: 0 0 30px 0;
 }
 .contact-wrapper .wrapper .contact-icons-container {
   display: -webkit-box;
@@ -490,14 +559,6 @@ nav ul li a:hover::before {
           justify-content: space-between;
   width: 150px;
   padding-left: 0px;
-}
-.contact-wrapper .wrapper .contact-icons-container .contact-list .button-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .footer-wrapper {
