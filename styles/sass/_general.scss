@@ -13,7 +13,6 @@ ul {
 .button {
     background-color: v.$button-color;
     width: 150px;
-    padding: 7px;
     p {
         font-family: v.$secondary-font;
         text-align: center;
@@ -22,6 +21,7 @@ ul {
             text-align: center;
             text-decoration: none;
             font-family: v.$secondary-font;
+            color: black;
         }
         a:visited {
             color: v.$primary-font-color;

@@ -1,0 +1,62 @@
+@use './variables' as v;
+
+.projects {
+    background-color: whitesmoke;
+   .projects-wrapper {
+    padding: 50px 0 50px 0;
+        .wrapper {
+        h2 {
+            margin: 0;
+            text-align: center;
+        }
+        .block-wrapper {
+            padding: 35px 0 0 0;
+            }
+        .block-wrapper .project-block-one {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 60px 0;
+        }
+        .block-wrapper .project-block-two {
+            display: flex;
+            justify-content: space-between;
+        }
+        }
+    } 
+}
+
+.project-block {
+    width: 45%;
+    .image {
+        width: 300px;
+        img {
+            width: 100%;
+        }
+    }
+    .text-button-container {
+        .text {
+            h4 {
+                margin: 0 0 15px 0;
+            }
+            h5 {
+                color: v.$primary-color;
+                margin: 0;
+            }
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .block-wrapper {
+        flex-direction: column;
+        .project-block-one,
+        .project-block-two {
+            flex-direction: column;
+        }
+    }
+       
+}

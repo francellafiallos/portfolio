@@ -13,12 +13,19 @@
     .audio-project {
         width: 45%;
         iframe {
-            width: 100%;
-            height: 345px;
+            width: 300px;
+            height: 300px;
         }
         img {
-            height: 345px;
-            width: 345px;
+            height: 300px;
+            width: 300px;
         }
+    }
+}
+
+@media (max-width: 720px) {
+    .audio-projects .audio-projects-wrapper .wrapper .audio-projects-block {
+        display: flex;
+        flex-direction: column;
     }
 }
