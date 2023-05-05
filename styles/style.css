@@ -581,7 +581,7 @@ nav .nav-icon {
   padding-left: 0px;
   display: grid;
   grid-auto-rows: 33% 33% 33%;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: repeat(auto-fit, minmax(min(50%, max(150px, 25%)), 1fr));
   row-gap: 25px;
 }
 .skills .text-container .skills-list li {

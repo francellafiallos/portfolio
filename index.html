@@ -20,17 +20,19 @@
                 <div class="wrapper">
                     <div class="nav-container">
 
-                        <nav>
+                        <!-- <nav> -->
 
                             <div class="nav-items">
-
-                                <ul class="menu">
-                                    <li><a href="index.html" class="menu-item">Home</a></li>
-                                    <li><a href="#about" class="menu-item">About</a></li>
-                                    <li><a href="#projects" class="menu-item">Projects</a></li>
-                                    <li><a href="#contact" class="menu-item">Contact</a></li>
-                                </ul>
-
+                                
+                                <nav>
+                                
+                                    <ul class="menu">
+                                        <li><a href="index.html" class="menu-item">Home</a></li>
+                                        <li><a href="#about" class="menu-item">About</a></li>
+                                        <li><a href="#projects" class="menu-item">Projects</a></li>
+                                        <li><a href="#contact" class="menu-item">Contact</a></li>
+                                    </ul>
+                                </nav>
                             </div>
 
                             
@@ -40,7 +42,7 @@
                                 <a href="#" class="icon"><i class="fa-solid fa-bars" alt="An icon representing a menu"></i></a>
                             </div>
 
-                        </nav>
+                        <!-- </nav> -->
                 
                     </div>
                     <div class="hero-container">
@@ -354,7 +356,7 @@
                 </div>
                 <div class="button-container">
                     <div class="button">
-                        <p><a href="mailto:francella.fiallos@gmail.com">Email Francella</a></p>
+                        <p><a href="" id="contact-email">Email Francella</a></p>
                     </div>
                 </div>
                 <div class="button-container">
@@ -434,12 +436,16 @@
 
         // credit to codepen - simple Typing Carousel
 
+        // accordion for skills
+
         const acc = document.getElementsByClassName("accordion");
         let i;
 
         for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function() {
             this.classList.toggle("aorctive");
+            document.querySelector(".skills-title-container").children[0].classList.toggle("fa-plus");
+            document.querySelector(".skills-title-container").children[0].classList.toggle("fa-minus"); 
 
             let panel = this.nextElementSibling;
             if (panel.style.display === "block") {
@@ -449,6 +455,8 @@
             }
         });
      }
+
+
      function classToggle () {
         const menuItems = document.querySelectorAll('.menu-item');
         menuItems.forEach(event => event.classList.toggle('nav-bar-toggle-show'));
@@ -457,6 +465,12 @@
         document.querySelector('.nav-icon')
         .addEventListener('click', classToggle);
 
+
+        // email - credit to CSS Tricks
+
+        const encEmail = "ZnJhbmNlbGxhLmZpYWxsb3NAZ21haWwuY29t";
+        const form = document.getElementById("contact-email");
+        form.setAttribute("href", "mailto:".concat(atob(encEmail)));
 
     </script>
     

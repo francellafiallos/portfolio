@@ -10,7 +10,7 @@
             padding-left: 0px; 
             display: grid;
             grid-auto-rows: 33% 33% 33%;
-            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%/2, max(150px, 100%/4)), 1fr));
             row-gap: 25px;
             li {
                 display: flex;
@@ -69,4 +69,6 @@
         
     }
 }
+
+
 
