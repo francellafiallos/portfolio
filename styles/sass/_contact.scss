@@ -24,6 +24,9 @@
                 justify-content: space-between;
                 width: 150px;
                 padding-left: 0px;
+                li i a :visited {
+                    color: black;
+                }
             }
         }
     }

@@ -514,8 +514,8 @@ nav .nav-icon {
   padding: 30px;
 }
 .hero-container .hero-text-container .button-container {
-  position: absolute;
-  width: 54%;
+  position: relative;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -562,6 +562,37 @@ nav .nav-icon {
 @media (max-width: 1024px) {
   .main-header .nav-large {
     height: 150px;
+  }
+}
+@media (max-width: 720px) {
+  .hero-container h1 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: clamp(1.75rem, 1.4489rem + 2.1307vw, 3rem);
+  }
+}
+@media (max-width: 580px) {
+  .hero-container h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .hero-container h3 {
+    font-size: 1.5rem;
+  }
+  .hero-container .hero-text-container {
+    border: none;
+    padding: 0px;
+    text-align: left;
+  }
+}
+@media (max-width: 400px) {
+  .hero-container h1 {
+    font-size: 1.75rem;
+  }
+  .hero-container h1 .hero-container h3 {
+    font-size: 1rem;
   }
 }
 .about-me {
@@ -858,6 +889,9 @@ nav .nav-icon {
           justify-content: space-between;
   width: 150px;
   padding-left: 0px;
+}
+.contact-wrapper .wrapper .contact-icons-container .contact-list li i a :visited {
+  color: black;
 }
 
 .footer-wrapper {
