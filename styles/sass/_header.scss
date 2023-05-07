@@ -4,46 +4,47 @@
     height: 100vh;
     // background-image: 
     background-color: v.$header-color;
-    background-image: url('/assets/header.jpg');
+    background-image: url('../assets/header.jpg');
     .nav-wrapper {
         background-color: whitesmoke;
         height: 60px;
         width: 100%;
         box-shadow: 0px 0px 1px 1px whitesmoke;
-        .hero-container {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            h1, 
-            h3 {
-                color: v.$header-color;
-            }
-            h1 {
-                margin: 0;
-                font-size: 5vw;
-            }
-            h3 {
-                margin: 5px 0 35px 0;
-
-            }
-            .hero-text-container {
-                border: 7px solid gainsboro;
-                padding: 30px;
-            }
-            .hero-text-container .button-container {
-                position: absolute;
-                width: 54%;
-                display: flex;
-                justify-content: center;
-            }
-            .hero-text-container .button-container .button {
-                margin: 8px 0 0 0;
-            }
-        }
     }
 }
+
+.hero-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+        h1, 
+        h3 {
+        color: v.$header-color;
+            }
+        h1 {
+        margin: 0;
+        font-size: 5vw;
+        }
+        h3 {
+        margin: 5px 0 35px 0;
+    }
+    .hero-text-container {
+        border: 7px solid gainsboro;
+        padding: 30px;
+        }
+        .hero-text-container .button-container {
+            position: absolute;
+            width: 54%;
+            display: flex;
+            justify-content: center;
+            }
+            .hero-text-container .button-container .button {
+            margin: 8px 0 0 0;
+            }
+}
+
 
 .nav-container {
     display: flex;
@@ -65,5 +66,11 @@
     .nav-wrapper .nav-container .nav-icon {
         display: block;
         margin: 8px 0 0 0;
+    }
+}
+
+@media (max-width: 1024px) {
+   .main-header .nav-large {
+        height: 150px;
     }
 }
