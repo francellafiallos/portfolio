@@ -346,6 +346,9 @@ nav ul li a:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
+nav ul li a:focus {
+  outline: #5F7367;
+}
 nav .nav-icon {
   display: none;
 }
@@ -454,7 +457,9 @@ nav .nav-icon {
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   }
   .nav-items a:hover::before,
-  .nav-icon a:hover::before {
+  .nav-icon a:hover::before,
+  .nav-items a:focus,
+  .nav-icon a:focus {
     -webkit-transform-origin: left;
             transform-origin: left;
     -webkit-transform: scaleX(1);
@@ -634,6 +639,9 @@ nav .nav-icon {
 .skills .text-container .skills-list li i {
   font-size: clamp(2.5rem, 1.8608rem + 3.196vw, 5.3125rem);
 }
+.skills .text-container .skills-list li i:focus {
+  outline: gainsboro;
+}
 .skills .text-container .other-skills-accordion .panel ul li {
   list-style: disc;
   text-align: left;
@@ -680,6 +688,9 @@ nav .nav-icon {
   margin: 0;
 }
 .skills .text-container .other-skills-accordion .active, .skills .text-container .other-skills-accordion .accordion:hover {
+  background-color: #9daa96;
+}
+.skills .text-container .other-skills-accordion .active, .skills .text-container .other-skills-accordion .accordion:focus {
   background-color: #9daa96;
 }
 .skills .text-container .other-skills-accordion .panel {
@@ -743,6 +754,10 @@ nav .nav-icon {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.project-block .text-button-container .button-container .button a:focus {
+  -webkit-text-decoration: underline gainsboro;
+          text-decoration: underline gainsboro;
 }
 
 @media (max-width: 1130px) {
@@ -890,7 +905,7 @@ nav .nav-icon {
   width: 150px;
   padding-left: 0px;
 }
-.contact-wrapper .wrapper .contact-icons-container .contact-list li i a :visited {
+.contact-wrapper .wrapper .contact-icons-container .contact-list li a:visited {
   color: black;
 }
 

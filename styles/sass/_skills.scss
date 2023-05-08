@@ -20,6 +20,9 @@
             li i {
                 font-size: clamp(2.5rem, 1.8608rem + 3.196vw, 5.3125rem);
             }
+            li i:focus {
+                outline: gainsboro;
+            }
         }
         .other-skills-accordion {
             .panel ul li {
@@ -56,8 +59,12 @@
                 }
             }
             .active, .accordion:hover {
-                background-color: #9daa96;
+                background-color: v.$secondary-color;
               }
+
+            .active, .accordion:focus {
+                background-color: v.$secondary-color;
+            }
     
               .panel {
                 padding: 0 18px;

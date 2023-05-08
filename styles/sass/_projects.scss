@@ -1,7 +1,7 @@
 @use './variables' as v;
 
 .projects {
-    background-color: whitesmoke;
+    background-color: v.$default-color;
    .projects-wrapper {
     padding: 50px 0 50px 0;
         .wrapper {
@@ -46,6 +46,9 @@
         .button-container {
             display: flex;
             justify-content: space-between;
+        }
+        .button-container .button a:focus {
+            text-decoration: underline v.$tertiary-color;
         }
     }
 }

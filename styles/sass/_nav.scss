@@ -37,6 +37,9 @@ nav {
                 transform-origin: left;
                 transform: scaleX(1);
             }
+            a:focus {
+                outline: v.$primary-color;
+            }
         }
     }
     .nav-icon {
@@ -122,7 +125,9 @@ nav {
 
 
     .nav-items a:hover::before,
-    .nav-icon a:hover::before {
+    .nav-icon a:hover::before,
+    .nav-items a:focus,
+    .nav-icon a:focus {
         transform-origin: left;
         transform: scaleX(1);
     }
@@ -138,8 +143,4 @@ nav {
     }
 }
 
-// @media (max-width: 1024px) {
-//    .main-header .nav-wrapper {
-//         height: 150px;
-//     }
-// }
+
